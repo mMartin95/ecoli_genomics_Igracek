@@ -1,0 +1,42 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=PASS,Description="All filters passed">
+##bcftoolsVersion=1.24+htslib-1.24
+##bcftoolsCommand=mpileup --threads 4 -f data/reference2/ATCC25922.fasta results/mapped2/C40_final.bam results/mapped2/ZnO40_final.bam results/mapped2/ZnONPs40_final.bam results/mapped2/ZnO20+20_final.bam results/mapped2/ZnONPs20+20_final.bam
+##reference=file://data/reference2/ATCC25922.fasta
+##contig=<ID=NZ_CP009072.1,length=5130767>
+##ALT=<ID=*,Description="Represents allele(s) other than observed.">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=IDV,Number=1,Type=Integer,Description="Maximum number of raw reads supporting an indel">
+##INFO=<ID=IMF,Number=1,Type=Float,Description="Maximum fraction of raw reads supporting an indel">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw read depth">
+##INFO=<ID=VDB,Number=1,Type=Float,Description="Variant Distance Bias for filtering splice-site artefacts in RNA-seq data (bigger is better)",Version="3">
+##INFO=<ID=RPBZ,Number=1,Type=Float,Description="Mann-Whitney U-z test of Read Position Bias (closer to 0 is better)">
+##INFO=<ID=MQBZ,Number=1,Type=Float,Description="Mann-Whitney U-z test of Mapping Quality Bias (closer to 0 is better)">
+##INFO=<ID=BQBZ,Number=1,Type=Float,Description="Mann-Whitney U-z test of Base Quality Bias (closer to 0 is better)">
+##INFO=<ID=MQSBZ,Number=1,Type=Float,Description="Mann-Whitney U-z test of Mapping Quality vs Strand Bias (closer to 0 is better)">
+##INFO=<ID=SCBZ,Number=1,Type=Float,Description="Mann-Whitney U-z test of Soft-Clip Length Bias (closer to 0 is better)">
+##INFO=<ID=SGB,Number=1,Type=Float,Description="Segregation based metric, http://samtools.github.io/bcftools/rd-SegBias.pdf">
+##INFO=<ID=MQ0F,Number=1,Type=Float,Description="Fraction of MQ0 reads (smaller is better)">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="List of Phred-scaled genotype likelihoods">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Allelic depths (high-quality bases)">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##INFO=<ID=AC,Number=A,Type=Integer,Description="Allele count in genotypes for each ALT allele, in the same order as listed">
+##INFO=<ID=AN,Number=1,Type=Integer,Description="Total number of alleles in called genotypes">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Number of high-quality ref-forward , ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=MQ,Number=1,Type=Integer,Description="Average mapping quality">
+##bcftools_callVersion=1.24+htslib-1.24
+##bcftools_callCommand=call --threads 4 -m -v -Ob -o results/variants2/all_samples_joint_raw_variants.bcf; Date=Tue Nov 10 22:37:34 2026
+##bcftools_viewVersion=1.24+htslib-1.24
+##bcftools_viewCommand=view -Ov -o results/variants2/all_samples_joint_raw_variants.vcf results/variants2/all_samples_joint_raw_variants.bcf; Date=Tue Nov 10 22:39:48 2026
+##bcftools_filterVersion=1.24+htslib-1.24
+##bcftools_filterCommand=filter -i 'QUAL > 30 && DP >= 10 && MQ > 30' -O v -o results/variants2/all_samples_joint_filtered.vcf results/variants2/all_samples_joint_raw_variants.vcf; Date=Thu Nov 12 20:24:27 2026
+##SnpEffVersion="5.4c (build 2026-02-23 07:25), by Pablo Cingolani"
+##SnpEffCmd="SnpEff  ATCC25922_whole results/variants2/all_samples_joint_filtered.vcf "
+##INFO=<ID=ANN,Number=.,Type=String,Description="Functional annotations: 'Allele | Annotation | Annotation_Impact | Gene_Name | Gene_ID | Feature_Type | Feature_ID | Transcript_BioType | Rank | HGVS.c | HGVS.p | cDNA.pos / cDNA.length | CDS.pos / CDS.length | AA.pos / AA.length | Distance | ERRORS / WARNINGS / INFO'">
+##INFO=<ID=LOF,Number=.,Type=String,Description="Predicted loss of function effects for this variant. Format: 'Gene_Name | Gene_ID | Number_of_transcripts_in_gene | Percent_of_transcripts_affected'">
+##INFO=<ID=NMD,Number=.,Type=String,Description="Predicted nonsense mediated decay effects for this variant. Format: 'Gene_Name | Gene_ID | Number_of_transcripts_in_gene | Percent_of_transcripts_affected'">
+##bcftools_viewCommand=view -s C40,ZnONPs20+20 all_samples_joint_annotated.vcf; Date=Fri Nov 13 21:47:09 2026
+##bcftools_viewCommand=view -i 'GT[1] == "1/1" && GT[0] == "0/0"' -O v -o /Volumes/PortableSSD/GitHub_portfolio/Igracek/results/variants2/Raw_variants/Fixed_variants/ZnONPs20+20_variants.vcf; Date=Fri Nov 13 21:47:09 2026
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	C40	ZnONPs20+20
+NZ_CP009072.1	856988	.	C	T	455.732	PASS	DP=280;VDB=0.897992;SGB=-48.3079;RPBZ=0.684305;MQBZ=0;MQSBZ=0;BQBZ=-1.32543;SCBZ=2.54132;MQ0F=0;AC=2;AN=4;DP4=53,63,38,35;MQ=60;ANN=T|upstream_gene_variant|MODIFIER|DR76_RS03995|gene-DR76_RS03995|transcript|TRANSCRIPT_gene-DR76_RS03995|protein_coding||c.-147G>A|||||147|,T|upstream_gene_variant|MODIFIER|dgoR|gene-DR76_RS04000|transcript|TRANSCRIPT_gene-DR76_RS04000|protein_coding||c.-132C>T|||||132|,T|upstream_gene_variant|MODIFIER|dgoK|gene-DR76_RS04005|transcript|TRANSCRIPT_gene-DR76_RS04005|protein_coding||c.-818C>T|||||818|,T|upstream_gene_variant|MODIFIER|dgoA|gene-DR76_RS04010|transcript|TRANSCRIPT_gene-DR76_RS04010|protein_coding||c.-1680C>T|||||1680|,T|upstream_gene_variant|MODIFIER|dgoD|gene-DR76_RS04015|transcript|TRANSCRIPT_gene-DR76_RS04015|protein_coding||c.-2294C>T|||||2294|,T|upstream_gene_variant|MODIFIER|dgoT|gene-DR76_RS04020|transcript|TRANSCRIPT_gene-DR76_RS04020|protein_coding||c.-3517C>T|||||3517|,T|downstream_gene_variant|MODIFIER|recF|gene-DR76_RS03970|transcript|TRANSCRIPT_gene-DR76_RS03970|protein_coding||c.*4855C>T|||||4855|,T|downstream_gene_variant|MODIFIER|gyrB|gene-DR76_RS03975|transcript|TRANSCRIPT_gene-DR76_RS03975|protein_coding||c.*2412C>T|||||2412|,T|downstream_gene_variant|MODIFIER|yidB|gene-DR76_RS03985|transcript|TRANSCRIPT_gene-DR76_RS03985|protein_coding||c.*1774C>T|||||1774|,T|downstream_gene_variant|MODIFIER|yidA|gene-DR76_RS03990|transcript|TRANSCRIPT_gene-DR76_RS03990|protein_coding||c.*847C>T|||||847|,T|downstream_gene_variant|MODIFIER|cbrA|gene-DR76_RS04025|transcript|TRANSCRIPT_gene-DR76_RS04025|protein_coding||c.*4815G>A|||||4815|,T|intergenic_region|MODIFIER|DR76_RS03995-dgoR|gene-DR76_RS03995-gene-DR76_RS04000|intergenic_region|gene-DR76_RS03995-gene-DR76_RS04000|||n.856988C>T||||||	GT:PL:AD	0/0:0,81,255:27,0	1/1:255,84,0:0,28
+NZ_CP009072.1	3800289	.	A	G	208.213	PASS	DP=299;VDB=0.567036;SGB=22.1441;RPBZ=1.07657;MQBZ=0;MQSBZ=0;BQBZ=2.44346;SCBZ=1.99978;MQ0F=0;AC=2;AN=4;DP4=88,80,21,22;MQ=60;ANN=G|missense_variant|MODERATE|hns|gene-DR76_RS18605|transcript|TRANSCRIPT_gene-DR76_RS18605|protein_coding|1/1|c.19A>G|p.Ile7Val|19/414|19/414|7/137||,G|upstream_gene_variant|MODIFIER|tdk|gene-DR76_RS18600|transcript|TRANSCRIPT_gene-DR76_RS18600|protein_coding||c.-622T>C|||||622|,G|upstream_gene_variant|MODIFIER|ychJ|gene-DR76_RS18625|transcript|TRANSCRIPT_gene-DR76_RS18625|protein_coding||c.-3772A>G|||||3772|WARNING_TRANSCRIPT_NO_START_CODON,G|upstream_gene_variant|MODIFIER|purU|gene-DR76_RS18630|transcript|TRANSCRIPT_gene-DR76_RS18630|protein_coding||c.-4280A>G|||||4280|,G|downstream_gene_variant|MODIFIER|adhE|gene-DR76_RS18590|transcript|TRANSCRIPT_gene-DR76_RS18590|protein_coding||c.*2697A>G|||||2697|,G|downstream_gene_variant|MODIFIER|gene-DR76_RS18595|null.113|transcript|gene-DR76_RS18595|pseudogene||n.*1524A>G|||||1524|,G|downstream_gene_variant|MODIFIER|galU|gene-DR76_RS18610|transcript|TRANSCRIPT_gene-DR76_RS18610|protein_coding||c.*539T>C|||||539|,G|downstream_gene_variant|MODIFIER|rssB|gene-DR76_RS18615|transcript|TRANSCRIPT_gene-DR76_RS18615|protein_coding||c.*1649T>C|||||1649|,G|downstream_gene_variant|MODIFIER|rssA|gene-DR76_RS18620|transcript|TRANSCRIPT_gene-DR76_RS18620|protein_coding||c.*2754T>C|||||2754|	GT:PL:AD	0/0:0,117,255:39,0	1/1:255,123,0:0,41
