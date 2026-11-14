@@ -83,7 +83,7 @@ To eliminate false-positive results caused by minor coordinate shifts or sequenc
 
 | Structural event| Genomic coordinates| Size | Affected locus / genes| Functional consequence
 | :--- | :--- | :--- | :--- | :--- |
-| **Large Deletion (MC)**  | NZ_CP009072:3,613,985 – 3,619,728| | Δ 5,743 bp | partially DR76_RS17700, DR76_RS17705, DR76_RS17710, DR76_RS17715, DR76_RS17720, partially DR76_RS17725 (6 genes) | Complete loss of the Type VI secretion system (T6SS) Vgr family operon.
+| **Large Deletion (MC)**  | NZ_CP009072:3,613,985 – 3,619,728 | Δ 5,743 bp | partially DR76_RS17700, DR76_RS17705, DR76_RS17710, DR76_RS17715, DR76_RS17720, partially DR76_RS17725 (6 genes) | Complete loss of the Type VI secretion system (T6SS) Vgr family operon.
 
 | Identifier| Gene| 
 | :--- | :--- | 
