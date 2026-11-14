@@ -29,4 +29,7 @@ This directory stores the essential reference genome, raw variant calls, structu
   **Variants**: Fixed variants for ZnO20+20.
 
 - `ZnONPs20+20_variants.vcf`
-  **Variants**: Fixed variants for ZnONPs20+20. 
+  **Variants**: Fixed variants for ZnONPs20+20.
+
+- `ZnONPs40_MC_coverage.tsv`
+ **Deletion Evidence**: Locus-specific depth of coverage dataset generated via `bedtools coverage`, providing empirical quantitative proof of the unmapped 5.7 kb deletion across the T6SS operon in the `ZnONPs40` nanoparticle-adapted lineage.
