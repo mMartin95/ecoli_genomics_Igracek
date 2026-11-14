@@ -10,13 +10,13 @@ This directory stores the essential reference genome, raw variant calls, structu
 - `ATCC25922.gff3`  
 **Structural Annotation**: Genomic features, gene coordinates, and locus tags (`DR76_RS...`) utilized by annotation tools (`snpEff`).
 
-  - `ATCC25922.gb`  
+- `ATCC25922.gb`  
 **GenBank Record**: Complete GenBank flatfile formatted specifically as the reference input for `breseq` structural variant and junction analysis.
 
 - `all_samples_joint_ raw_variants.vcf` 
   **Raw Variants**: - Raw variants for all samples C40, ZnO40, ZnONPs40, ZnO20+20, ZnONPs20+20.
 
-  - `all_samples_joint_ filtered_annotated.vcf` 
+- `all_samples_joint_ filtered_annotated.vcf` 
   **Filtered and annotated variants**: Filtered and annotated variants for all samples C40, ZnO40, ZnONPs40, ZnO20+20, ZnONPs20+20.
 
 - `ZnO40_variants.vcf`
@@ -25,8 +25,8 @@ This directory stores the essential reference genome, raw variant calls, structu
 - `ZnONPs40_variants.vcf`
   **Variants**: Fixed variants for ZnONPs40.
 
-  - `ZnO20+20_variants.vcf`
+- `ZnO20+20_variants.vcf`
   **Variants**: Fixed variants for ZnO20+20.
 
-  - `ZnONPs20+20_variants.vcf`
+- `ZnONPs20+20_variants.vcf`
   **Variants**: Fixed variants for ZnONPs20+20. 
