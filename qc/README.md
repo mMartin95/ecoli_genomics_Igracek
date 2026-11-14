@@ -22,7 +22,7 @@ Opening the interactive files in raw_reads directory:
 * ZnO20+20_2 FastQC html report: https://htmlpreview.github.io/?https://github.com/mMartin95/ecoli_genomics_Igracek/blob/main/qc/raw_reads/ZnO20%2B20_R2_fastqc.html
 * ZnONPs20+20_1 FastQC html report: https://htmlpreview.github.io/?https://github.com/mMartin95/ecoli_genomics_Igracek/blob/main/qc/raw_reads/ZnONPs20%2B20_R1_fastqc.html
 * ZnONPs20+20_2 FastQC html report: https://htmlpreview.github.io/?https://github.com/mMartin95/ecoli_genomics_Igracek/blob/main/qc/raw_reads/ZnONPs20%2B20_R2_fastqc.html
-* MultiQC report of both raw paired reads: https://htmlpreview.github.io/?
+* MultiQC report of both raw paired reads: https://htmlpreview.github.io/?https://github.com/mMartin95/ecoli_genomics_Igracek/blob/main/qc/raw_reads/raw_data_multiqc_report.html
 
 Opening the interactive files in trimmed_reads directory:
 * C40_trimmed_1 FastqC html report: https://htmlpreview.github.io/?https://github.com/mMartin95/ecoli_genomics_Igracek/blob/main/qc/trimmed_reads/C40_R1_trimmed_fastqc.html
@@ -35,5 +35,5 @@ Opening the interactive files in trimmed_reads directory:
 * ZnO20+20_trimmed_2 FastQC html report: https://htmlpreview.github.io/?https://github.com/mMartin95/ecoli_genomics_Igracek/blob/main/qc/trimmed_reads/ZnO20%2B20_R2_trimmed_fastqc.html
 * ZnONPs20+20_trimmed_1 FastQC html report: https://htmlpreview.github.io/?https://github.com/mMartin95/ecoli_genomics_Igracek/blob/main/qc/trimmed_reads/ZnONPs20%2B20_R1_trimmed_fastqc.html
 * ZnONPs20+20_trimmed_2 FastQC html report: https://htmlpreview.github.io/?https://github.com/mMartin95/ecoli_genomics_Igracek/blob/main/qc/trimmed_reads/ZnONPs20%2B20_R2_trimmed_fastqc.html
-* MultiQC report of both trimmed paired reads: https://htmlpreview.github.io/?
+* MultiQC report of both trimmed paired reads: https://htmlpreview.github.io/?https://github.com/mMartin95/ecoli_genomics_Igracek/blob/main/qc/trimmed_reads/trimmed_data_multiqc_report.html
 
