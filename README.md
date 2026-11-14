@@ -67,7 +67,7 @@ To eliminate false-positive results caused by minor coordinate shifts or sequenc
 | **cpxA** | c.518T>C | p.Leu173Pro | Sensor histidine kinase disruption |
 
 | Region / Location | Variant Details | Biological context | 
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | 
 | **Upstream yfiR** | c.-4818T>C | Modification in a densely packed intergenic space (affecting overlapping transcripts like *yfiR*, *raiA*, and *bamD*) | 
 | **Upstream rpoB** | c.-279G>A | Promotor/regulatory mutation upstream of the RNA polymerase subunit operon (*rpoB/rpoC*) |
 | **Upstream gene-K758_RS17080** (hypothetical protein) | c.-4987C>T | Putative regulatory variation near a hypothetical locus[cite: 3]; potential alteration of binding sites for stress-responsive transcription factors, potentially unlocking adaptive expression changes|
@@ -103,7 +103,7 @@ To eliminate false-positive results caused by minor coordinate shifts or sequenc
 | **deaD** | c.1535G>A | p.Gly512Asp | DEAD-box RNA helicase disruption |
 
 | Region / Location | Variant Details | Biological context | 
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | 
 | **Upstream gene-K758_RS23240** | c.-147G>A | Regulatory/promoter region modification near sugar acid transport/metabolism genes| 
 
 #### ZnONPs20+20
