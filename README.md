@@ -1,6 +1,6 @@
-# Genomic analyses of E. coli strains repeatedly exposed to zinc (ZnO, ZnONPs) and strains with withdrawal
+# Genomic analyses of *E. coli* strains repeatedly exposed to zinc (ZnO, ZnONPs) and strains with withdrawal
 
-Variant validation, structural variation (SV) pipeline, and methodological impact assessment for *Escherichia coli* strains subjected to long-term sub-inhibitory zinc stress up to the 40th subculture (ZnO40, ZnONPs40),  withdrawal lineages (ZnO20+20, ZnONPs20+20), and parallel control (C40). 
+Variant validation, structural variation (SV) pipeline, and methodological impact assessment for *Escherichia coli* strains subjected to long-term sub-inhibitory zinc stress up to the 40th subculture (ZnO40, ZnONPs40),  withdrawal lineages (ZnO20+20, ZnONPs20+20), and parallel control (C40). The scheme of the zinc treatment is able to be seen in the figure Igracek_scheme.png.
 
 Phenotypic screening revealed an unexpected emergence of **antibiotic cross-resistance**, wherein continuous exposure to bulk zinc oxide (ZnO40) drove strain to reach the EUCAST clinical resistance breakpoints for key therapeutic classes, notably cefazolin (CFZ), gentamicin (GEN), and amikacin (AMK). 
 
